@@ -1,49 +1,49 @@
 <!doctype linuxdoc system>
 
 <article>
-<title>cc65 Documentation Overview
+<title>cc65 ドキュメントの概要
 <author><url url="http://cc65.github.io/doc">
 <date>2017-02-15
 
-<sect>Program documentation<p>
+<sect>プログラムのドキュメント<p>
 
 <descrip>
 
   <tag><htmlurl url="ar65.html" name="ar65.html"></tag>
-  Describes the ar65 archiver.
+  ar65 アーカイバの説明.
 
   <tag><htmlurl url="ca65.html" name="ca65.html"></tag>
-  Describes the ca65 macro assembler.
+  ca65 マクロアセンブラの説明.
 
   <tag><htmlurl url="cc65.html" name="cc65.html"></tag>
-  Describes the cc65 C compiler.
+  cc65 Cコンパイラの説明.
 
   <tag><htmlurl url="chrcvt65.html" name="chrcvt65.html"></tag>
-  Describes the vector font converter.
+  chrvt65 アウトラインフォント・コンバータの説明.
 
   <tag><htmlurl url="cl65.html" name="cl65.html"></tag>
-  Describes the cl65 compile &amp; link utility.
+  cl65 コンパイルとリンクのユーティリティの説明.
 
   <tag><htmlurl url="co65.html" name="co65.html"></tag>
-  Describes the co65 object-file converter.
+  co65 オブジェクトファイル・コンバータの説明.
 
   <tag><htmlurl url="da65.html" name="da65.html"></tag>
-  Describes the da65 6502/65C02 disassembler.
+  da65 6502/65C02 逆アセンブラの説明.
 
   <tag><htmlurl url="grc65.html" name="grc65.html"></tag>
-  Describes the GEOS resource compiler.
+  grc65 GEOS(Commodore64)リソースのコンパイラの説明.
 
   <tag><htmlurl url="ld65.html" name="ld65.html"></tag>
   Describes the ld65 linker.
 
   <tag><htmlurl url="od65.html" name="od65.html"></tag>
-  Describes the od65 object-file analyzer.
+  od65 オブジェクトファイル・アナライザの説明.
 
   <tag><htmlurl url="sim65.html" name="sim65.html"></tag>
-  Describes the 6502 and 65C02 simulator.
+  6502 and 65C02 シュミレータの説明.
 
   <tag><htmlurl url="sp65.html" name="sp65.html"></tag>
-  Describes the sprite and bitmap utility.
+  sp65 スプライトとビットマップのユーティリティの説明.
 
 </descrip>
 
