@@ -1,65 +1,59 @@
 <!doctype linuxdoc system>      <!-- -*- text-mode -*- -->
 
 <article>
-<title>ca65 Users Guide
+<title>ca65 ユーザーズガイド
 <author><url url="mailto:uz@cc65.org" name="Ullrich von Bassewitz">,<newline>
 <url url="mailto:greg.king5@verizon.net" name="Greg King">
 <date>2016-06-11
 
 <abstract>
-ca65 is a powerful macro assembler for the 6502, 65C02, and 65816 CPUs. It is
-used as a companion assembler for the cc65 crosscompiler, but it may also be
-used as a standalone product.
+ca65は6502/65C02/65816向けの強力なマクロアセンブラです。
+cc65クロスコンパイラに必須なアセンブラとして使われる一方で、
+単独な製品としても使用できます。
 </abstract>
 
-<!-- Table of contents -->
+<!-- 目次 -->
 <toc>
 
-<!-- Begin the document -->
+<!-- ドキュメントの始まり -->
 
-<sect>Overview<p>
+<sect>概要<p>
 
-ca65 is a replacement for the ra65 assembler that was part of the cc65 C
-compiler, originally developed by John R. Dunning. I had some problems with
-ra65 and the copyright does not permit some things which I wanted to be
-possible, so I decided to write a completely new assembler/linker/archiver
-suite for the cc65 compiler. ca65 is part of this suite.
+ca65は、元々、John R. Dunningによって開発されたcc65 Cコンパイラの一部であったra65アセンブラの代替品です。
+ra65には問題があり、その著作権では可能としたい要件が許されていなかったので、
+私がcc65コンパイラ用の全く新しいアセンブラ/リンカ/アーカイバのスイーツ(一揃い)を作成することにしました。
+ca65はこのスイーツの一部です。
 
-Some parts of the assembler (code generation and some routines for symbol
-table handling) are taken from an older crossassembler named a816 written
-by me a long time ago.
+アセンブラのいくつかの部分（コード生成とシンボルテーブル処理用のいくつかのルーチン）は、
+私が以前に書いたa816という名前の古いクロスアセンブラから取り込まれています。
 
+<sect1>設計基準<p>
 
-<sect1>Design criteria<p>
-
-Here's a list of the design criteria, that I considered important for the
-development:
+私が開発にとって重要と考える設計基準のリストは次のとおりです。
 
 <itemize>
 
-<item>	The assembler must support macros. Macros are not essential, but they
-      	make some things easier, especially when you use the assembler in the
-	backend of a compiler.
-<item>	The assembler must support the newer 65C02 and 65816 CPUs. I have been
-	thinking about a 65816 backend for the C compiler, and even my old
-	a816 assembler had support for these CPUs, so this wasn't really a
-	problem.
-<item>	The assembler must produce relocatable code. This is necessary for the
-	compiler support, and it is more convenient.
-<item>	Conditional assembly must be supported. This is a must for bigger
-	projects written in assembler (like Elite128).
-<item>	The assembler must support segments, and it must support more than
-	three segments (this is the count, most other assemblers support).
-	Having more than one code segments helps developing code for systems
-	with a divided ROM area (like the C64).
-<item>	The linker must be able to resolve arbitrary expressions. It should
-	be able to get things like
+<item>	アセンブラはマクロをサポートする必要があります。
+	マクロは必須ではありませんが、特にコンパイラのバックエンドでアセンブラを使用する場合は、
+	マクロを使用する方が簡単です。
+<item>	アセンブラは、新しい65C02および65816 CPUをサポートする必要があります。
+	私はCコンパイラのための65816バックエンドについて考えていましたが、
+	私の古いa816アセンブラでさえこれらのCPUをサポートしていましたが、
+	これは本当に問題ではありませんでした。
+<item>	アセンブラはリロケータブルコードを生成する必要があります。
+	これはコンパイラのサポートに必要であり、より便利です。
+<item>	条件付きアセンブリをサポートする必要があります。
+	これはアセンブラで書かれたより大きなプロジェクト(Elite128のようなもの)のための必須項目です。
+<item>	アセンブラは、できれば3つ以上のセグメントをサポートする必要があります
+	(これが重要であり、ほとんどのアセンブラでサポートあり)。
+	複数のコードセグメントを持つと、分割されたROM領域を持つシステム(C64など)のコードを開発するのに役立つでしょう。
+<item>	リンカは任意の式を解決できなければなりません。
+	それは次のようなものを得ることができるはずです。
 <tscreen><verb>
 	.import	S1, S2
 	.export Special
    	Special	= 2*S1 + S2/7
 </verb></tscreen>
-	right.
 <item>	True lexical nesting for symbols. This is very convenient for larger
 	assembly projects.
 <item>	"Cheap" local symbols without lexical nesting for those quick, late
