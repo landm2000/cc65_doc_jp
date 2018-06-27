@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!doctype linuxdoc system>
 
 <article>
@@ -29,10 +28,10 @@
   co65 オブジェクトファイル・コンバータの説明。
 
   <tag><htmlurl url="da65.html" name="da65.html"></tag>
-  da65 6502/65C02 逆アセンブラの説明。
+  da65 6502と65C02の逆アセンブラの説明。
 
   <tag><htmlurl url="grc65.html" name="grc65.html"></tag>
-  grc65 GEOS(Commodore64)リソース・コンパイラの説明.
+  grc65 GEOS(コモドール64用オペレーティングシステム)リソース・コンパイラの説明.
 
   <tag><htmlurl url="ld65.html" name="ld65.html"></tag>
   ld65 リンカの説明。
@@ -41,7 +40,7 @@
   od65 オブジェクトファイル・アナライザの説明。
 
   <tag><htmlurl url="sim65.html" name="sim65.html"></tag>
-  6502 and 65C02 シュミレータの説明。
+  sim65 6502と65C02のシミュレータの説明。
 
   <tag><htmlurl url="sp65.html" name="sp65.html"></tag>
   sp65 スプライトとビットマップのユーティリティの説明。
@@ -55,20 +54,18 @@
 
   <tag><htmlurl url="intro.html" name="intro.html"></tag>
   短い「ハロー・ワールド」を作りながら、ツールの使い方の説明をします。
-  例：
 
   <tag><htmlurl url="coding.html" name="coding.html"></tag>
-  cc65で最も効果的なコード作成のヒントが含まれるでしょう。
+  cc65で最も効果的なコード作成のヒントが含まれます。
 
   <tag><htmlurl url="cc65-intern.html" name="cc65-intern.html"></tag>
   呼び出し規約など、cc65内の詳細について説明します。
 
   <tag><htmlurl url="using-make.html" name="using-make.html"></tag>
-  プログラムのビルドにはGNU Makeを使用しました。
+  プログラムのビルドにはGNU Makeを使用します。
 
   <tag><htmlurl url="customizing.html" name="customizing.html"></tag>
-  カスタム・ハードウェア・プラットフォームにcc65 ツール群を使う方法
-  （現在、ターゲットのシステムはc65ライブラリでサポートされていません）。
+  カスタム・ハードウェア・プラットフォーム（現在、c65ライブラリでサポートされていないターゲット・システ）にcc65 ツール群を使う方法。
 
   <tag><htmlurl url="debugging.html" name="debugging.html"></tag>
   VICEエミュレータを使ったプログラムのデバッグ方法。
@@ -96,84 +93,84 @@
   cc65ランタイムとCライブラリの概要。
 
   <tag><htmlurl url="smc.html" name="smc.html"></tag>
-  自己修正アセンブラコードを書くためのクリスチャン・クルーガーのマクロ・パッケージの説明。
+  自己修正アセンブラコードを書くためのクリスチャン・クルーガーのマクロ・パッケージを説明します。
 
   <tag><url name="6502 Binary Relocation Format document"
         url="http://www.6502.org/users/andre/o65/fileformat.html"></tag>
-  動的ロード可能なモジュールやLUnix(Little UNIX)のプログラムで使われるo65ファイルフォーマットの説明
+  動的ロード可能なモジュールやLUnix(Little UNIX)のプログラムで使われるo65ファイルフォーマットを説明します。
 
 </descrip>
 
 
-<sect>Platform-specific information<p>
+<sect>プラットフォーム固有の情報<p>
 
 <descrip>
 
   <tag><htmlurl url="apple2.html" name="apple2.html"></tag>
-  Topics specific to the Apple&nbsp;&rsqb;&lsqb;.
+  Apple&nbsp;&rsqb;&lsqb;固有のトピックス。
 
   <tag><htmlurl url="apple2enh.html" name="apple2enh.html"></tag>
-  Topics specific to the enhanced&nbsp;Apple&nbsp;//e.
+  Apple&nbsp;//eで拡張された固有のトピックス。
 
   <tag><htmlurl url="atari.html" name="atari.html"></tag>
-  Topics specific to the Atari 8-bit machines.
+  アタリ8ビットマシンに固有のトピックス。
 
   <tag><htmlurl url="atari2600.html" name="atari2600.html"></tag>
-  Topics specific to the Atari 2600 Game Console.
+  アタリ2600ゲーム機に固有のトピックス。
 
   <tag><htmlurl url="atari5200.html" name="atari5200.html"></tag>
-  Topics specific to the Atari 5200 Game Console.
+  アタリ5200ゲーム機に固有のトピックス。
 
   <tag><htmlurl url="atmos.html" name="atmos.html"></tag>
-  Topics specific to the Oric Atmos.
+  Oric Atmosに固有のトピックス。
 
   <tag><htmlurl url="c128.html" name="c128.html"></tag>
-  Topics specific to the Commodore 128.
+  コモドール128に固有のトピックス。
 
   <tag><htmlurl url="c16.html" name="c16.html"></tag>
-  Topics specific to the Commodore 16/116.
+  コモドール16/116に固有のトピックス。
 
   <tag><htmlurl url="c64.html" name="c64.html"></tag>
-  Topics specific to the Commodore 64.
+  コモドール64に固有のトピックス。
 
   <tag><htmlurl url="cbm510.html" name="cbm510.html"></tag>
-  Topics specific to the Commodore 510.
+  コモドール510に固有のトピックス。
 
   <tag><htmlurl url="cbm610.html" name="cbm610.html"></tag>
-  Topics specific to the Commodore 610.
+  コモドール６10に固有のトピックス。
 
   <tag><htmlurl url="creativision.html" name="creativision.html"></tag>
-  Topics specific to the Creativision Console.
+  VTech CreatiVisionに固有のトピックス。
 
   <tag><htmlurl url="gamate.html" name="gamate.html"></tag>
-  Topics specific to the Bit Corporation Gamate Console.
+  Gamate(台湾のBit Corporationが1990年に発売)に固有のトピックス。
 
   <tag><htmlurl url="lynx.html" name="lynx.html"></tag>
-  Topics specific to the Atari Lynx Game Console.
+  アタリ・リンクス(Atari Lynx)に固有のトピックス。
 
   <tag><htmlurl url="nes.html" name="nes.html"></tag>
-  Topics specific to the Nintendo Entertainment System.
+  ファミリーコンピュータ(NES)に固有のトピックス。
 
   <tag><htmlurl url="osi.html" name="osi.html"></tag>
-  Topics specific to the Ohio Scientific machines.
+  Ohio Scientific社のマシンに固有のトピックス。
 
   <tag><htmlurl url="pce.html" name="pce.html"></tag>
-  Topics specific to NEC PC-Engine (TurboGrafx) Console.
+  PCエンジン(TurboGrafx-16)に固有のトピックス。
 
   <tag><htmlurl url="pet.html" name="pet.html"></tag>
-  Topics specific to the Commodore PET machines.
+  コモドール社のPET 2001に固有のトピックス。
 
   <tag><htmlurl url="plus4.html" name="plus4.html"></tag>
-  Topics specific to the Commodore Plus/4.
+  コモドールPlus/4に固有のトピックス。
 
   <tag><htmlurl url="supervision.html" name="supervision.html"></tag>
-  Topics specific to the Watara Supervision Console.
+  ワタラ・スーパービジョンゲーム機(アジア製)に固有のトピックス。
 
   <tag><htmlurl url="telestrat.html" name="telestrat.html"></tag>
-  Topics specific to the Oric Telestrat.
+  Oric Telestratに固有のトピックス。
 
   <tag><htmlurl url="vic20.html" name="vic20.html"></tag>
-  Topics specific to the Commodore VIC20.
+  コモドールVIC-20に固有のトピックス。
 
 </descrip>
 
