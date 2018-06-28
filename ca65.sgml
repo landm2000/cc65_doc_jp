@@ -54,10 +54,9 @@ ca65はこのスイーツの一部です。
 	.export Special
    	Special	= 2*S1 + S2/7
 </verb></tscreen>
-<item>	True lexical nesting for symbols. This is very convenient for larger
-	assembly projects.
-<item>	"Cheap" local symbols without lexical nesting for those quick, late
-	night hacks.
+<item>	（正しい語彙の入れ子による表記）？？？は大規模なアセンブラのプロジェクトに非常に便利です。
+<item>	
+	"Cheap" local symbols without lexical nesting for those quick, late night hacks.
 <item>	I liked the idea of "options" as Anre Fachats .o65 format has it, so I
 	introduced the concept into the object file format use by the new cc65
 	binutils.
