@@ -5,4 +5,5 @@ please set the following "environment variable" and execute　the "make" command
 次の環境変数を設定してからmakeコマンドを実行してしてください。
 
 $  export SP_CHARSET_FIXED=yes SP_ENCODING=xml  ↩︎
+
 $  make  ↩︎
